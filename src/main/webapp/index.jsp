@@ -120,7 +120,7 @@
 
 <!-- Footer -->
 <footer class="text-center mt-5">
-    <p class="mb-0">© 2025 Real Estate Portal | SE1020 Project</p>
+    <p class="mb-0">© 2026 Real Estate Portal | SE1020 Project</p>
 </footer>
 
 </body>
