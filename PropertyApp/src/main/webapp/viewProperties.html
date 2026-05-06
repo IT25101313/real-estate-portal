@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties | LuxeRealEstate</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .agent-info {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        .agent-info span {
+            display: inline-block;
+            margin-right: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .agent-info strong {
+            color: #f8fafc;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>LuxeRealEstate</h1>
+        <div class="nav-links">
+            <a href="viewProperties.html" class="active">View Properties</a>
+            <a href="addProperty.html">Add Property</a>
+            <a href="deleteProperty.html">Delete Property</a>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 1000px;">
+        <h2>Available Properties</h2>
+        <div class="property-list" id="propertyList">
+            <div class="empty-state">
+                <h3>No properties available</h3>
+                <p>Be the first to add a property listing!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

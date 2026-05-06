@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Property | LuxeRealEstate</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .section-title {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            color: #a5b4fc;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>LuxeRealEstate</h1>
+        <div class="nav-links">
+            <a href="viewProperties.html">View Properties</a>
+            <a href="addProperty.html">Add Property</a>
+            <a href="deleteProperty.html">Delete Property</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Update Property Listing</h2>
+        <form id="updateForm" action="UpdatePropertyServlet" method="post">
+            <div class="section-title">Property Details</div>
+            <div class="form-group">
+                <label for="prop-id">Property ID</label>
+                <input type="text" id="prop-id" name="id" readonly style="background: rgba(0,0,0,0.3); cursor: not-allowed; opacity: 0.7;">
+            </div>
+            <input type="hidden" id="createDate" name="createDate">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title">
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location">
+            </div>
+            <div class="form-group">
+                <label for="price">Price ($)</label>
+                <input type="number" step="0.01" min="0.01" id="price" name="price">
+            </div>
+
+            <div class="section-title">Agent Details</div>
+            <div class="form-group">
+                <label for="agentName">Agent Name</label>
+                <input type="text" id="agentName" name="agentName">
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" pattern="\d{10}" title="Phone number must be exactly 10 digits">
+            </div>
+            <div class="form-group">
+                <label for="agencyName">Agency Name</label>
+                <input type="text" id="agencyName" name="agencyName">
+            </div>
+            <div class="form-group">
+                <label for="licenseNumber">License Number</label>
+                <input type="text" id="licenseNumber" name="licenseNumber">
+            </div>
+
+            <button type="submit" style="margin-top: 1rem;">Update Listing</button>
+        </form>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

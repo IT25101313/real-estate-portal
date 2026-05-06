@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Property | LuxeRealEstate</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <h1>LuxeRealEstate</h1>
+        <div class="nav-links">
+            <a href="viewProperties.html">View Properties</a>
+            <a href="addProperty.html">Add Property</a>
+            <a href="deleteProperty.html" class="active">Delete Property</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Remove Listing</h2>
+        <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+            Enter the ID of the property you wish to remove from the system. This action cannot be undone.
+        </p>
+        <form id="deleteForm" action="DeletePropertyServlet" method="post">
+            <div class="form-group">
+                <label for="prop-id">Property ID</label>
+                <input type="text" id="prop-id" name="id" placeholder="e.g. P1001" required>
+            </div>
+            <button type="submit" class="danger">Delete Property</button>
+        </form>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
